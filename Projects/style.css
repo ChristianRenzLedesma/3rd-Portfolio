@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to bottom, #723C3C, #110802);
+    color: #fff;
+}
+
+header {
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #00c3ff;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 1.5rem;
+}
+
+.nav-links a {
+    color: #00c3ff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover, .nav-links .active {
+    background: black;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.hero {
+    padding: 2rem;
+    text-align: center;
+    background: linear-gradient(to bottom, #723C3C, #110802);
+    min-height: calc(100vh - 60px);
+}
+
+.style{
+    width: 5px;
+    height: 40px;
+    background: #fff;
+}
+
+.projects{
+    top: -10px;
+    position: relative;
+}
+
+.projects{
+    font-size: 20px;
+    margin: 20px;
+}
+
+.projects h2 {
+    color: #00c3ff;
+    margin-bottom: 1rem;
+    position: relative;
+    top: -20px;
+}
+
+.project-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 20px;
+}
+
+.project-item {
+    background-color: #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 250px;
+}
+
+.project-item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.project-name {
+    color: red;
+    text-shadow: 1px 2px 3px #723C3C;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+
+    .nav-links {
+        display: none;
+    }
+
+    .projects h2 {
+        font-size: 1.5rem;
+    }
+
+    .project-item {
+        width: 80%;
+        height: auto;
+        padding: 10px;
+    }
+}
